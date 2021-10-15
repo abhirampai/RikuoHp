@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { useScroll } from "react-scroll-hooks";
 import { motion } from "framer-motion";
+import Contact from "./Contact";
 
 const ScrollableDiv = ({ loading }) => {
   const containerRef = useRef();
@@ -51,7 +52,7 @@ const ScrollableDiv = ({ loading }) => {
         Services
       </section>
       <section ref={contactRef} id="Contact" className="h-full">
-        Contact
+        <Contact />
       </section>
     </motion.div>
   );

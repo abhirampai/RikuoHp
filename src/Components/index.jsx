@@ -55,7 +55,7 @@ const Index = () => {
   return (
     <>
       <motion.div
-        className="absolute h-screen z-50 flex items-center justify-center w-full bg-black"
+        className="absolute z-50 flex items-center justify-center w-full h-screen bg-black"
         initial="initial"
         animate="animate"
         variants={blackBox}
@@ -97,12 +97,12 @@ const Index = () => {
               className="w-24 h-24 mx-auto mt-2"
             />
           </div>
-          <div className="flex w-full justify-between">
-            <div className="mt-36 w-1/2">
+          <div className="flex flex-wrap justify-between w-full">
+            <div className="w-full md:w-1/2 mt-36">
               <Links loading={loading} />
             </div>
-            <div className="mt-20 w-1/2">
-              <ScrollableDiv loading={loading}/>
+            <div className="w-full mt-20 md:w-1/2">
+              <ScrollableDiv loading={loading} />
             </div>
           </div>
         </>

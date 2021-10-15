@@ -21,7 +21,7 @@ const Links = ({ loading }) => {
         ...prevClicked,
         services: !prevClicked.services,
       }));
-    } else if (window.location.href.includes("contacts")) {
+    } else if (window.location.href.includes("contact")) {
       setLinksClicked((prevClicked) => ({
         ...prevClicked,
         contact: !prevClicked.contact,
