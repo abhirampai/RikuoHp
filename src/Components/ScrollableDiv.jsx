@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { useScroll } from "react-scroll-hooks";
 import { motion } from "framer-motion";
 
-const ScrollableDiv = () => {
+const ScrollableDiv = ({ loading }) => {
   const containerRef = useRef();
   const kaishaJouhouRef = useRef();
   const kaishaRirekishiRef = useRef();
@@ -22,20 +22,20 @@ const ScrollableDiv = () => {
       scrollToElement(kaishaRirekishiRef);
     } else if (window.location.href.includes("services")) {
       scrollToElement(servicesRef);
-    } else if (window.location.href.includes("contacts")) {
+    } else if (window.location.href.includes("contact")) {
       scrollToElement(contactRef);
     }
     setTimeout(() => {
       window.scrollTo(0, 0);
     }, 1000);
-  });
+  }, [window.location.href]);
   return (
-    <motion.div 
+    <motion.div
       initial={{ x: "100vw" }}
-      animate={{ x: 0 }}
-      transition={{ duration: 1}}
+      animate={!loading && { x: 0 }}
+      transition={{ duration: 1 }}
       ref={containerRef}
-      className="relative overflow-y-scroll h-96 bg-white"
+      className="relative overflow-y-scroll bg-white h-96"
     >
       <section ref={kaishaJouhouRef} id="Kaisha Jouhou " className="h-full">
         Kaisha Jouhou

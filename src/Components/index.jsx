@@ -102,7 +102,7 @@ const Index = () => {
               <Links loading={loading} />
             </div>
             <div className="mt-20 w-1/2">
-              <ScrollableDiv />
+              <ScrollableDiv loading={loading}/>
             </div>
           </div>
         </>
