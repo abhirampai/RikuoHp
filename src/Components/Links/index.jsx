@@ -26,6 +26,11 @@ const Links = ({ loading }) => {
         ...prevClicked,
         contact: !prevClicked.contact,
       }));
+    } else {
+      setLinksClicked((prevClicked) => ({
+        ...prevClicked,
+        kaishajouhou: !prevClicked.kaishajouhou,
+      }));
     }
   }, []);
   return (
