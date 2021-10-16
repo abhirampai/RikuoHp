@@ -1,18 +1,18 @@
 const Contact = () => {
   return (
-    <div class="relative flex items-top justify-center max-h-screen bg-white dark:bg-gray-900 sm:pt-0">
-      <div class="max-w-6xl mx-auto sm:px-6 mt-4 lg:px-8">
+    <div className="relative flex justify-center max-h-screen bg-white items-top dark:bg-gray-900 sm:pt-0">
+      <div className="max-w-6xl mx-auto mt-4 sm:px-6 lg:px-8">
         <div>
-          <div class="grid grid-cols-1 md:grid-cols-2">
-            <div class="p-6 mr-2 bg-gray-100 dark:bg-gray-800 sm:rounded-lg">
-              <h1 class="text-4xl sm:text-5xl text-gray-800 dark:text-white font-extrabold tracking-tight">
+          <div className="grid grid-cols-1 md:grid-cols-2">
+            <div className="p-6 mr-2 bg-gray-100 dark:bg-gray-800 sm:rounded-lg">
+              <h1 className="text-4xl font-extrabold tracking-tight text-gray-800 sm:text-5xl dark:text-white">
                 Get in touch
               </h1>
-              <p class="text-normal text-lg sm:text-2xl font-medium text-gray-600 dark:text-gray-400 mt-2">
+              <p className="mt-2 text-lg font-medium text-gray-600 text-normal sm:text-2xl dark:text-gray-400">
                 Fill in the form to start a conversation
               </p>
 
-              <div class="flex items-center mt-8 text-gray-600 dark:text-gray-400">
+              <div className="flex items-center mt-8 text-gray-600 dark:text-gray-400">
                 <svg
                   fill="none"
                   stroke="currentColor"
@@ -20,7 +20,7 @@ const Contact = () => {
                   strokeLinejoin="round"
                   strokeWidth="1.5"
                   viewBox="0 0 24 24"
-                  class="w-8 h-8 text-gray-500"
+                  className="w-8 h-8 text-gray-500"
                 >
                   <path
                     strokeLinecap="round"
@@ -35,12 +35,12 @@ const Contact = () => {
                     d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                   />
                 </svg>
-                <div class="ml-4 text-md tracking-wide font-semibold w-40">
+                <div className="w-40 ml-4 font-semibold tracking-wide text-md">
                   Acme Inc, Street, State, Postal Code
                 </div>
               </div>
 
-              <div class="flex items-center mt-4 text-gray-600 dark:text-gray-400">
+              <div className="flex items-center mt-4 text-gray-600 dark:text-gray-400">
                 <svg
                   fill="none"
                   stroke="currentColor"
@@ -48,7 +48,7 @@ const Contact = () => {
                   strokeLinejoin="round"
                   strokeWidth="1.5"
                   viewBox="0 0 24 24"
-                  class="w-8 h-8 text-gray-500"
+                  className="w-8 h-8 text-gray-500"
                 >
                   <path
                     strokeLinecap="round"
@@ -57,12 +57,12 @@ const Contact = () => {
                     d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                   />
                 </svg>
-                <div class="ml-4 text-md tracking-wide font-semibold w-40">
+                <div className="w-40 ml-4 font-semibold tracking-wide text-md">
                   +44 1234567890
                 </div>
               </div>
 
-              <div class="flex items-center mt-2 text-gray-600 dark:text-gray-400">
+              <div className="flex items-center mt-2 text-gray-600 dark:text-gray-400">
                 <svg
                   fill="none"
                   stroke="currentColor"
@@ -70,7 +70,7 @@ const Contact = () => {
                   strokeLinejoin="round"
                   strokeWidth="1.5"
                   viewBox="0 0 24 24"
-                  class="w-8 h-8 text-gray-500"
+                  className="w-8 h-8 text-gray-500"
                 >
                   <path
                     strokeLinecap="round"
@@ -79,15 +79,15 @@ const Contact = () => {
                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                   />
                 </svg>
-                <div class="ml-4 text-md tracking-wide font-semibold w-40">
+                <div className="w-40 ml-4 font-semibold tracking-wide text-md">
                   info@acme.org
                 </div>
               </div>
             </div>
 
-            <form class="p-6 flex flex-col justify-center">
-              <div class="flex flex-col">
-                <label for="name" class="hidden">
+            <form className="flex flex-col justify-center p-6">
+              <div className="flex flex-col">
+                <label htmlFor="name" className="hidden">
                   Full Name
                 </label>
                 <input
@@ -95,12 +95,12 @@ const Contact = () => {
                   name="name"
                   id="name"
                   placeholder="Full Name"
-                  class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
+                  className="px-3 py-3 mt-2 font-semibold text-gray-800 bg-white border border-gray-400 rounded-lg w-100 dark:bg-gray-800 dark:border-gray-700 focus:border-indigo-500 focus:outline-none"
                 />
               </div>
 
-              <div class="flex flex-col mt-2">
-                <label for="email" class="hidden">
+              <div className="flex flex-col mt-2">
+                <label htmlFor="email" className="hidden">
                   Email
                 </label>
                 <input
@@ -108,12 +108,12 @@ const Contact = () => {
                   name="email"
                   id="email"
                   placeholder="Email"
-                  class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
+                  className="px-3 py-3 mt-2 font-semibold text-gray-800 bg-white border border-gray-400 rounded-lg w-100 dark:bg-gray-800 dark:border-gray-700 focus:border-indigo-500 focus:outline-none"
                 />
               </div>
 
-              <div class="flex flex-col mt-2">
-                <label for="tel" class="hidden">
+              <div className="flex flex-col mt-2">
+                <label htmlFor="tel" className="hidden">
                   Number
                 </label>
                 <input
@@ -121,13 +121,13 @@ const Contact = () => {
                   name="tel"
                   id="tel"
                   placeholder="Telephone Number"
-                  class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
+                  className="px-3 py-3 mt-2 font-semibold text-gray-800 bg-white border border-gray-400 rounded-lg w-100 dark:bg-gray-800 dark:border-gray-700 focus:border-indigo-500 focus:outline-none"
                 />
               </div>
 
               <button
                 type="submit"
-                class="md:w-32 bg-indigo-600 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-indigo-500 transition ease-in-out duration-300"
+                className="px-6 py-3 mt-3 font-bold text-white transition duration-300 ease-in-out bg-indigo-600 rounded-lg md:w-32 hover:bg-blue-dark hover:bg-indigo-500"
               >
                 Submit
               </button>

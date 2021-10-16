@@ -1,8 +1,11 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import logo from "../Assets/up-wind-logo-2.jpeg";
+import { INITIAL_LINKS_CLICKED } from "../Common/constants";
+import logo from "../Assets/up-wind-logo-2.png";
 import Links from "./Links";
-import ScrollableDiv from "./ScrollableDiv";
+import ScrollableDiv from "./ScrollableSection";
+import SocialLinks from "./SocialLinks";
+import MainText from "./MainText";
 
 const blackBox = {
   initial: {
@@ -46,6 +49,7 @@ const text = {
 };
 
 const Index = () => {
+  const [linksClick, setLinksClicked] = useState(INITIAL_LINKS_CLICKED);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     setTimeout(() => {
@@ -87,22 +91,28 @@ const Index = () => {
       </motion.div>
       {!loading && (
         <>
-          <div className="mx-auto">
+          <div>
             <motion.img
               initial={{ y: "100vh" }}
               animate={{ y: 0 }}
               transition={{ duration: 1 }}
               src={logo}
               alt="logo"
-              className="w-24 h-24 mx-auto mt-2"
+              className="w-24 h-24"
             />
           </div>
           <div className="flex flex-wrap justify-between w-full">
-            <div className="w-full md:w-1/2 mt-36">
-              <Links loading={loading} />
+            <div className="absolute bottom-0 left-0 w-full mb-10 md:w-1/2">
+              <Links
+                loading={loading}
+                linksClick={linksClick}
+                setLinksClicked={setLinksClicked}
+              />
             </div>
-            <div className="w-full mt-20 md:w-1/2">
+            <div className="absolute bottom-0 right-0 w-full md:w-1/2">
+              <MainText />
               <ScrollableDiv loading={loading} />
+              <SocialLinks />
             </div>
           </div>
         </>

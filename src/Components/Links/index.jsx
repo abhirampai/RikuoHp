@@ -1,10 +1,8 @@
 import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
-import { INITIAL_LINKS_CLICKED } from "../../Common/constants";
+import { useEffect } from "react";
 import LinkTag from "./LinkTag";
 
-const Links = ({ loading }) => {
-  const [linksClick, setLinksClicked] = useState(INITIAL_LINKS_CLICKED);
+const Links = ({ loading, linksClick, setLinksClicked }) => {
   useEffect(() => {
     if (window.location.href.includes("kaishajouhou")) {
       setLinksClicked((prevClicked) => ({

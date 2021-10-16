@@ -20,12 +20,12 @@ const LinkTag = ({ linksClick, setLinksClicked, title }) => {
       >
         <a
           href={`/#${key}`}
-          onClick={() =>
+          onClick={() => {
             setLinksClicked((prevClicked) => ({
               ...INITIAL_LINKS_CLICKED,
               [key]: !prevClicked[key],
-            }))
-          }
+            }));
+          }}
         >
           {title}
         </a>
