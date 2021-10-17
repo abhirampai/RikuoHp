@@ -36,7 +36,7 @@ const LinkTag = ({ linksClick, setLinksClicked, title, setShowForm }) => {
           linksClick[key]
             ? LINK_CLICKED.borderStyle
             : LINK_NOT_CLICKED.borderStyle
-        } hidden md:block`}
+        }`}
       ></div>
     </motion.div>
   );
