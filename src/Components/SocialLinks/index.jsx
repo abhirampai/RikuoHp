@@ -1,7 +1,7 @@
 const SocialLinks = () => {
   return (
-    <div className="absolute bottom-0 right-0 z-10 flex mt-4 text-white md:m-0">
-      <div className="flex m-4">
+    <div className="absolute bottom-0 z-10 flex w-full mt-4 text-white md:right-0 md:m-0 md:w-auto">
+      <div className="flex justify-between w-full m-4 md:justify-start">
         <a href="#" className="px-4 text-sm">
           <svg
             className="w-5 h-5 fill-current"

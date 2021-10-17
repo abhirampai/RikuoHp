@@ -120,15 +120,15 @@ const Index = () => {
             </motion.div>
           </div>
           <div className="flex flex-wrap justify-between w-full">
-            <div className="w-1/2">
+            <div className="w-full md:w-1/2">
               <Info />
             </div>
-            <div className="w-1/2">
+            <div className="w-full md:w-1/2">
               {!showForm ? <MainText /> : <Contact setShowForm={setShowForm} />}
             </div>
           </div>
           <div className="flex flex-wrap justify-between w-full">
-            <div className="absolute bottom-0 left-0 w-full mb-6 xl:mb-10 md:w-1/2">
+            <div className="bottom-0 left-0 w-full mt-10 mb-6 md:mt-0 md:absolute xl:mb-10 md:w-1/2">
               <Links
                 loading={loading}
                 setShowForm={setShowForm}
@@ -140,7 +140,7 @@ const Index = () => {
               initial={{ x: "100vw" }}
               animate={!loading && { x: 0 }}
               transition={{ duration: 1.5 }}
-              className="absolute bottom-0 right-0 w-full md:w-1/2"
+              className="bottom-0 right-0 w-full md:absolute md:w-1/2"
             >
               <ScrollableDiv />
               <SocialLinks />
