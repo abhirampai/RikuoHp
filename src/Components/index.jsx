@@ -140,7 +140,7 @@ const Index = () => {
               initial={{ x: "100vw" }}
               animate={!loading && { x: 0 }}
               transition={{ duration: 1.5 }}
-              className="bottom-0 right-0 w-full h-full md:relative md:w-1/2"
+              className="bottom-0 right-0 w-full h-full md:relative md:w-1/2 md:-inset-y-16"
             >
               <ScrollableDiv />
               <SocialLinks />
