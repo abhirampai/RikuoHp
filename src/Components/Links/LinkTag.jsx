@@ -5,7 +5,7 @@ import {
   LINK_NOT_CLICKED,
 } from "../../Common/constants";
 
-const LinkTag = ({ linksClick, setLinksClicked, title }) => {
+const LinkTag = ({ linksClick, setLinksClicked, title, setShowForm }) => {
   const key = `${title.split(" ").join("").toLowerCase()}`;
   return (
     <motion.div
@@ -21,6 +21,7 @@ const LinkTag = ({ linksClick, setLinksClicked, title }) => {
         <a
           href={`/#${key}`}
           onClick={() => {
+            setShowForm(false);
             setLinksClicked((prevClicked) => ({
               ...INITIAL_LINKS_CLICKED,
               [key]: !prevClicked[key],

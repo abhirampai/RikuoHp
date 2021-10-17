@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useEffect } from "react";
 import LinkTag from "./LinkTag";
 
-const Links = ({ loading, linksClick, setLinksClicked }) => {
+const Links = ({ loading, setShowForm, linksClick, setLinksClicked }) => {
   useEffect(() => {
     if (window.location.href.includes("information")) {
       setLinksClicked((prevClicked) => ({
@@ -42,21 +42,25 @@ const Links = ({ loading, linksClick, setLinksClicked }) => {
         linksClick={linksClick}
         setLinksClicked={setLinksClicked}
         title="Information"
+        setShowForm={setShowForm}
       />
       <LinkTag
         linksClick={linksClick}
         setLinksClicked={setLinksClicked}
         title="Our History"
+        setShowForm={setShowForm}
       />
       <LinkTag
         linksClick={linksClick}
         setLinksClicked={setLinksClicked}
         title="Services"
+        setShowForm={setShowForm}
       />
       <LinkTag
         linksClick={linksClick}
         setLinksClicked={setLinksClicked}
         title="Contact"
+        setShowForm={setShowForm}
       />
     </motion.div>
   );
