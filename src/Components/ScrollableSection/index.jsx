@@ -64,21 +64,16 @@ import { motion } from "framer-motion";
 import { useRef } from "react";
 import { Rerousel } from "rerousel";
 import { IMAGES } from "../../Common/constants";
-const ScrollableDiv = ({ loading }) => {
+const ScrollableDiv = () => {
   const scrollDiv = useRef(null);
   return (
     <>
-      <motion.div
-        initial={{ x: "100vw" }}
-        animate={!loading && { x: 0 }}
-        transition={{ duration: 1 }}
-        className="overflow-auto bg-white h-96"
-      >
+      <motion.div className="overflow-auto bg-black h-96">
         <Rerousel itemRef={scrollDiv}>
           {IMAGES.map((c) => {
             return (
               <img
-                className="object-fill w-full h-full"
+                className="object-right-bottom h-full min-w-full"
                 key={c}
                 src={c}
                 ref={scrollDiv}

@@ -42,10 +42,26 @@ export const INFO = {
   // •07043831177
   // •0798476154
   //   `,
-  kaishajouhou: "kaisha jouhou",
-  kaisharirekishi: "kaisha rirekishi",
-  services: "services",
-  contact: "contacts",
+  kaishajouhou: { heading: "kaisha jouhou" },
+  kaisharirekishi: {
+    heading: `会社の歴史`,
+    content: [
+      {
+        heading: `1971年創業`,
+        body: `ガソリンスタンド業を創業 `,
+      },
+      {
+        heading: `1996年までに`,
+        body: `西宮、尼崎などに4店舗を展開`,
+      },
+      {
+        heading: `2016年から`,
+        body: `店舗ごとに株式化`,
+      },
+    ],
+  },
+  services: { heading: "services" },
+  contact: { heading: "contacts" },
 };
 
 export const IMAGES = [carImage1, carImage2, carImage3];

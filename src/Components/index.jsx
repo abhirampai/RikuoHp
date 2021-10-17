@@ -109,11 +109,16 @@ const Index = () => {
                 setLinksClicked={setLinksClicked}
               />
             </div>
-            <div className="absolute bottom-0 right-0 w-full md:w-1/2">
+            <motion.div
+              initial={{ x: "100vw" }}
+              animate={!loading && { x: 0 }}
+              transition={{ duration: 1.5 }}
+              className="absolute bottom-0 right-0 w-full md:w-1/2"
+            >
               <MainText />
-              <ScrollableDiv loading={loading} />
+              <ScrollableDiv />
               <SocialLinks />
-            </div>
+            </motion.div>
           </div>
         </>
       )}
