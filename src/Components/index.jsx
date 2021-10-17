@@ -105,9 +105,9 @@ const Index = () => {
               initial={{ x: "100vw" }}
               animate={!loading && { x: 0 }}
               transition={{ duration: 1.5 }}
-              className="mt-10 mr-2"
+              className="my-auto mr-5"
             >
-              <button className="p-2 pl-5 pr-5 text-lg text-white bg-transparent border-2 border-white rounded-lg hover:bg-white hover:text-black focus:border-4 focus:border-gray-300">
+              <button className="p-2 pl-5 pr-5 text-sm text-white bg-transparent border-2 border-white rounded-lg xl:text-lg hover:bg-white hover:text-black focus:border-4 focus:border-gray-300">
                 <a
                   href="#contact"
                   onClick={() =>
