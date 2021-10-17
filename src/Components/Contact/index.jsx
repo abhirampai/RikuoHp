@@ -35,15 +35,15 @@ const Contact = ({ setShowForm }) => {
           </div>
           <div>
             <div className="grid grid-cols-1 md:grid-cols-2">
-              <div className="p-6 mr-2 bg-transparent dark:bg-gray-800 sm:rounded-lg">
-                <h1 className="text-4xl font-extrabold tracking-tight text-gray-800 sm:text-5xl dark:text-white">
+              <div className="mr-2 bg-transparent dark:bg-gray-800 sm:rounded-lg">
+                <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl dark:text-white">
                   Get in touch
                 </h1>
-                <p className="mt-2 text-lg font-medium text-gray-600 text-normal sm:text-2xl dark:text-gray-400">
+                <p className="mt-2 text-lg font-medium text-white text-normal sm:text-2xl dark:text-gray-400">
                   Fill in the form to start a conversation
                 </p>
 
-                <div className="flex items-center mt-8 text-gray-600 dark:text-gray-400">
+                <div className="flex items-center mt-8 text-white dark:text-gray-400">
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -51,7 +51,7 @@ const Contact = ({ setShowForm }) => {
                     strokeLinejoin="round"
                     strokeWidth="1.5"
                     viewBox="0 0 24 24"
-                    className="w-8 h-8 text-gray-500"
+                    className="w-8 h-8 text-white"
                   >
                     <path
                       strokeLinecap="round"
@@ -72,7 +72,7 @@ const Contact = ({ setShowForm }) => {
                   </div>
                 </div>
 
-                <div className="flex items-center mt-4 text-gray-600 dark:text-gray-400">
+                <div className="flex items-center mt-4 text-white dark:text-gray-400">
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -80,7 +80,7 @@ const Contact = ({ setShowForm }) => {
                     strokeLinejoin="round"
                     strokeWidth="1.5"
                     viewBox="0 0 24 24"
-                    className="w-8 h-8 text-gray-500"
+                    className="w-8 h-8 text-white"
                   >
                     <path
                       strokeLinecap="round"
@@ -94,7 +94,7 @@ const Contact = ({ setShowForm }) => {
                   </div>
                 </div>
 
-                <div className="flex items-center mt-2 text-gray-600 dark:text-gray-400">
+                <div className="flex items-center mt-2 text-white dark:text-gray-400">
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -102,7 +102,7 @@ const Contact = ({ setShowForm }) => {
                     strokeLinejoin="round"
                     strokeWidth="1.5"
                     viewBox="0 0 24 24"
-                    className="w-8 h-8 text-gray-500"
+                    className="w-8 h-8 text-white"
                   >
                     <path
                       strokeLinecap="round"
