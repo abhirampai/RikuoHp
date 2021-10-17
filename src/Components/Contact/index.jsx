@@ -5,7 +5,7 @@ const Contact = ({ setShowForm }) => {
       initial={{ x: "100vw" }}
       animate={{ x: 0 }}
       transition={{ duration: 1 }}
-      className="relative z-50"
+      className="relative z-50 lg:-inset-x-24 md:-inset-x-12"
     >
       <div className="relative z-50 flex justify-center max-h-screen bg-transparent items-top dark:bg-gray-900 sm:pt-0">
         <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
