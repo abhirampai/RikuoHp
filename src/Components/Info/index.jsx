@@ -21,28 +21,40 @@ const Info = () => {
   }
   return (
     <>
-      <div className="flex flex-col w-1/2 mx-auto space-y-6 text-2xl text-white ">
+      <div className="flex flex-col w-1/2 mx-auto space-y-6 overflow-y-scroll text-2xl text-white ">
         <div>
-          <h1 className="text-4xl font-bold">Since</h1>
-          <h3 className="text-3xl text-gray-500">
+          <h1 className="text-2xl font-bold xl:text-4xl">Since</h1>
+          <h3 className="text-xl text-gray-500 xl:text-3xl">
             <Counter from={0} to={1996} />
           </h3>
         </div>
         <div>
-          <h1 className="text-4xl font-bold">Number Of Cars</h1>
-          <h3 className="text-gray-500">
-            <p className="flex text-3xl">
+          <h1 className="text-2xl font-bold xl:text-4xl">Number of cars</h1>
+          <h3 className="text-xl text-gray-500 xl:text-3xl">
+            <p className="flex">
               <Counter from={0} to={2874} />
-              ...
+              <div class="loader-dots block relative w-20 h-5 mt-2 xl:mt-4">
+                <div class="absolute top-0 mt-1 w-2 h-2 rounded-full bg-gray-500"></div>
+                <div class="absolute top-0 mt-1 w-2 h-2 rounded-full bg-gray-500"></div>
+                <div class="absolute top-0 mt-1 w-2 h-2 rounded-full bg-gray-500"></div>
+                <div class="absolute top-0 mt-1 w-2 h-2 rounded-full bg-gray-500"></div>
+              </div>
             </p>
           </h3>
         </div>
         <div>
-          <h1 className="text-4xl font-bold">Number Of Countries</h1>
-          <h3 className="text-gray-500">
-            <p className="flex text-3xl">
+          <h1 className="text-2xl font-bold xl:text-4xl">
+            Number of countries
+          </h1>
+          <h3 className="text-xl text-gray-500 xl:text-3xl">
+            <p className="flex">
               <Counter from={0} to={20} />
-              ...
+              <div class="loader-dots block relative w-20 h-5 mt-2 xl:mt-4">
+                <div class="absolute top-0 mt-1 w-2 h-2 rounded-full bg-gray-500"></div>
+                <div class="absolute top-0 mt-1 w-2 h-2 rounded-full bg-gray-500"></div>
+                <div class="absolute top-0 mt-1 w-2 h-2 rounded-full bg-gray-500"></div>
+                <div class="absolute top-0 mt-1 w-2 h-2 rounded-full bg-gray-500"></div>
+              </div>
             </p>
           </h3>
         </div>
