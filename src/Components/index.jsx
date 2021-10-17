@@ -93,14 +93,16 @@ const Index = () => {
       {!loading && (
         <>
           <div className="flex justify-between w-full">
-            <motion.img
-              initial={{ y: "100vh" }}
-              animate={{ y: 0 }}
-              transition={{ duration: 1 }}
-              src={logo}
-              alt="logo"
-              className="m-2 h-36 w-36"
-            />
+            <div className="w-1/7">
+              <motion.img
+                initial={{ y: "100vh" }}
+                animate={{ y: 0 }}
+                transition={{ duration: 1 }}
+                src={logo}
+                alt="logo"
+                className="mx-auto h-36 w-36"
+              />
+            </div>
             <motion.div
               initial={{ x: "100vw" }}
               animate={!loading && { x: 0 }}

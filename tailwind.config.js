@@ -6,6 +6,9 @@ module.exports = {
       screens: {
         xl: "1420px",
       },
+      width: {
+        "1/7": "35%"
+      }
     },
   },
   variants: {

@@ -26,7 +26,7 @@ const MainText = () => {
         initial={{ x: "100vw" }}
         animate={{ x: 0 }}
         transition={{ duration: 1.5 }}
-        className="relative z-50 w-1/2 space-y-6 text-white whitespace-pre-line -inset-x-24 -inset-y-10"
+        className="relative z-50 w-1/2 space-y-6 text-white whitespace-pre-line lg:-inset-x-24 -inset-y-10 md:-inset-x-12"
       >
         <p className="text-5xl font-bold xl:text-7xl">
           {textToDisplay.heading}
