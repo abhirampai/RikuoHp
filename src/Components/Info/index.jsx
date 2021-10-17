@@ -24,14 +24,14 @@ const Info = () => {
       <div className="flex flex-col w-1/2 mx-auto space-y-6 text-2xl text-white ">
         <div>
           <h1 className="text-4xl font-bold">Since</h1>
-          <h3 className="text-2xl text-gray-500">
+          <h3 className="text-3xl text-gray-500">
             <Counter from={0} to={1996} />
           </h3>
         </div>
         <div>
           <h1 className="text-4xl font-bold">Number Of Cars</h1>
           <h3 className="text-gray-500">
-            <p className="flex text-2xl">
+            <p className="flex text-3xl">
               <Counter from={0} to={2874} />
               ...
             </p>
@@ -40,7 +40,7 @@ const Info = () => {
         <div>
           <h1 className="text-4xl font-bold">Number Of Countries</h1>
           <h3 className="text-gray-500">
-            <p className="flex text-2xl">
+            <p className="flex text-3xl">
               <Counter from={0} to={20} />
               ...
             </p>
