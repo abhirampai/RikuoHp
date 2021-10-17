@@ -1,10 +1,10 @@
 const Contact = () => {
   return (
-    <div className="relative flex justify-center max-h-screen bg-white items-top dark:bg-gray-900 sm:pt-0">
+    <div className="relative z-50 flex justify-center max-h-screen bg-transparent items-top dark:bg-gray-900 sm:pt-0">
       <div className="max-w-6xl mx-auto mt-4 sm:px-6 lg:px-8">
         <div>
           <div className="grid grid-cols-1 md:grid-cols-2">
-            <div className="p-6 mr-2 bg-gray-100 dark:bg-gray-800 sm:rounded-lg">
+            <div className="p-6 mr-2 bg-transparent dark:bg-gray-800 sm:rounded-lg">
               <h1 className="text-4xl font-extrabold tracking-tight text-gray-800 sm:text-5xl dark:text-white">
                 Get in touch
               </h1>
@@ -35,8 +35,8 @@ const Contact = () => {
                     d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                   />
                 </svg>
-                <div className="w-40 ml-4 font-semibold tracking-wide text-md">
-                  Acme Inc, Street, State, Postal Code
+                <div className="ml-4 font-semibold tracking-wide w-52 text-md">
+                  〒663-8181,Wakakusa-cho 1-chome, Nishinomiya-shi, Hyogo, Japan
                 </div>
               </div>
 
@@ -57,8 +57,8 @@ const Contact = () => {
                     d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                   />
                 </svg>
-                <div className="w-40 ml-4 font-semibold tracking-wide text-md">
-                  +44 1234567890
+                <div className="w-32 ml-4 font-semibold tracking-wide text-md">
+                  070-4383-1177, 07-9847-6154
                 </div>
               </div>
 
@@ -80,7 +80,7 @@ const Contact = () => {
                   />
                 </svg>
                 <div className="w-40 ml-4 font-semibold tracking-wide text-md">
-                  info@acme.org
+                  hondy.tanso@icloud.com
                 </div>
               </div>
             </div>
@@ -127,7 +127,7 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="px-6 py-3 mt-3 font-bold text-white transition duration-300 ease-in-out bg-indigo-600 rounded-lg md:w-32 hover:bg-blue-dark hover:bg-indigo-500"
+                className="px-6 py-3 mt-3 font-bold text-white transition duration-300 ease-in-out bg-transparent border border-white rounded-lg md:w-32 hover:bg-blue-dark hover:bg-white hover:text-black"
               >
                 Submit
               </button>

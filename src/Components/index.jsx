@@ -7,6 +7,7 @@ import ScrollableDiv from "./ScrollableSection";
 import SocialLinks from "./SocialLinks";
 import MainText from "./MainText";
 import Info from "./Info";
+import Contact from "./Contact";
 
 const blackBox = {
   initial: {
@@ -52,6 +53,7 @@ const text = {
 const Index = () => {
   const [linksClick, setLinksClicked] = useState(INITIAL_LINKS_CLICKED);
   const [loading, setLoading] = useState(true);
+  const [showForm, setShowForm] = useState(false);
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
@@ -109,18 +111,11 @@ const Index = () => {
               transition={{ duration: 1.5 }}
               className="my-auto mr-5"
             >
-              <button className="p-2 pl-5 pr-5 text-sm text-white bg-transparent border-2 border-white rounded-lg xl:text-lg hover:bg-white hover:text-black focus:border-4 focus:border-gray-300">
-                <a
-                  href="#contact"
-                  onClick={() =>
-                    setLinksClicked((prevClicked) => ({
-                      ...INITIAL_LINKS_CLICKED,
-                      contact: !prevClicked.contact,
-                    }))
-                  }
-                >
-                  Get In Touch
-                </a>
+              <button
+                onClick={() => setShowForm(!showForm)}
+                className="p-2 pl-5 pr-5 text-sm text-white bg-transparent border-2 border-white rounded-lg xl:text-lg hover:bg-white hover:text-black focus:border-4 focus:border-gray-300"
+              >
+                Get In Touch
               </button>
             </motion.div>
           </div>
@@ -128,7 +123,9 @@ const Index = () => {
             <div className="w-1/2">
               <Info />
             </div>
-            <MainText />
+            <div className="w-1/2">
+              {!showForm ? <MainText /> : <Contact />}
+            </div>
           </div>
           <div className="flex flex-wrap justify-between w-full">
             <div className="absolute bottom-0 left-0 w-full mb-6 xl:mb-10 md:w-1/2">
