@@ -21,7 +21,7 @@ const Info = () => {
   }
   return (
     <>
-      <div className="flex flex-col w-1/2 mx-auto space-y-6 overflow-y-scroll text-2xl text-white ">
+      <div className="flex flex-col w-1/2 mx-auto space-y-6 text-2xl text-white border-r border-white-100">
         <div>
           <h1 className="text-2xl font-bold xl:text-4xl">Since</h1>
           <h3 className="text-xl text-gray-500 xl:text-3xl">
