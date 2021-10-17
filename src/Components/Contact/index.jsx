@@ -3,7 +3,6 @@ import emailjs from "emailjs-com";
 const Contact = ({ setShowForm }) => {
   function sendEmail(e) {
     e.preventDefault();
-
     emailjs
       .sendForm(
         process.env.REACT_APP_SERVICE_ID,
@@ -12,9 +11,7 @@ const Contact = ({ setShowForm }) => {
         process.env.REACT_APP_USER
       )
       .then(
-        (result) => {
-          console.log(result);
-        },
+        (result) => {},
         (error) => {
           console.log(error.text);
         }
