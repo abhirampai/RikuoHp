@@ -159,7 +159,7 @@ const Contact = ({ setShowForm }) => {
 
                 <button
                   type="submit"
-                  className="px-6 py-3 mt-3 font-bold text-white transition duration-300 ease-in-out bg-transparent border border-white rounded-lg md:w-32 hover:bg-blue-dark hover:bg-white hover:text-black"
+                  className="px-6 py-3 font-bold text-black transition duration-300 ease-in-out bg-white border border-white rounded-lg lg:mt-18 md:mt-32 xl:mt-20 md:w-32 hover:bg-blue-dark hover:bg-white hover:text-black"
                 >
                   Submit
                 </button>
