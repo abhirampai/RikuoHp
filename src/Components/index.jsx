@@ -67,7 +67,7 @@ const Index = () => {
         animate="animate"
         variants={blackBox}
       >
-        <motion.svg variants={textContainer} className="absolute z-50 flex">
+        {/* <motion.svg variants={textContainer} className="absolute z-50 flex">
           <pattern
             id="pattern"
             patternUnits="userSpaceOnUse"
@@ -90,7 +90,18 @@ const Index = () => {
           >
             Rikuo
           </text>
-        </motion.svg>
+        </motion.svg> */}
+        <motion.img
+          initial={{ x: 0 }}
+          animate={{
+            x: ["0vh", "0vh", "0vh", "0vh", "0vh", "0vh"],
+            scale: [1, 2, 2, 2, 1],
+          }}
+          transition={{ duration: 1 }}
+          src={logo}
+          className={`${loading ? "block" : "hidden"} w-36 h-36`}
+          alt="loading logo"
+        />
       </motion.div>
       {!loading && (
         <>
@@ -119,7 +130,7 @@ const Index = () => {
               </button>
             </motion.div>
           </div>
-          <div className="flex flex-wrap justify-between w-full">
+          <div className="relative flex flex-wrap justify-between w-full">
             <div className="w-full md:w-1/2">
               <Info />
             </div>
