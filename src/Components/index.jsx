@@ -24,31 +24,31 @@ const blackBox = {
   },
 };
 
-const textContainer = {
-  initial: {
-    opacity: 1,
-  },
-  animate: {
-    opacity: 0,
-    transition: {
-      duration: 0.25,
-      when: "afterChildren",
-    },
-  },
-};
+// const textContainer = {
+//   initial: {
+//     opacity: 1,
+//   },
+//   animate: {
+//     opacity: 0,
+//     transition: {
+//       duration: 0.25,
+//       when: "afterChildren",
+//     },
+//   },
+// };
 
-const text = {
-  initial: {
-    y: 40,
-  },
-  animate: {
-    y: 80,
-    transition: {
-      duration: 1.5,
-      ease: [0.87, 0, 0.13, 1],
-    },
-  },
-};
+// const text = {
+//   initial: {
+//     y: 40,
+//   },
+//   animate: {
+//     y: 80,
+//     transition: {
+//       duration: 1.5,
+//       ease: [0.87, 0, 0.13, 1],
+//     },
+//   },
+// };
 
 const Index = () => {
   const [linksClick, setLinksClicked] = useState(INITIAL_LINKS_CLICKED);

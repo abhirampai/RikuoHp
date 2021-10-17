@@ -21,17 +21,19 @@ const Info = () => {
   }
   return (
     <>
-      <div className="flex flex-col w-1/2 mx-auto mt-4 space-y-6 text-2xl text-white md:border-r xl:mt-6 border-white-100">
+      <div className="flex flex-col items-center mt-4 space-y-6 text-2xl text-white md:mx-auto md:w-1/2 md:border-r xl:mt-6 border-white-100">
         <div>
-          <h1 className="text-xl font-bold xl:text-3xl">Since</h1>
-          <h3 className="text-5xl text-gray-500">
-            <Counter from={0} to={1996} />
+          <h1 className="ml-4 text-xl font-bold md:ml-0 xl:text-3xl">Since</h1>
+          <h3 className="flex text-5xl text-gray-500">
+            <p className="flex justify-center md:justify-start">
+              <Counter from={0} to={1971} />
+            </p>
           </h3>
         </div>
         <div>
           <h1 className="text-xl font-bold xl:text-3xl">Number of cars</h1>
           <h3 className="text-5xl text-gray-500">
-            <p className="flex">
+            <p className="flex justify-center md:justify-start">
               <Counter from={0} to={2874} />+
             </p>
           </h3>
@@ -39,7 +41,7 @@ const Info = () => {
         <div>
           <h1 className="text-xl font-bold xl:text-3xl">Number of countries</h1>
           <h3 className="text-5xl text-gray-500">
-            <p className="flex">
+            <p className="flex justify-center md:justify-start">
               <Counter from={0} to={20} />+
             </p>
           </h3>

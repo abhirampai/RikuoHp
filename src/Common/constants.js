@@ -24,7 +24,7 @@ export const LINK_NOT_CLICKED = {
 
 export const INFO = {
   information: {
-    heading: "Company information",
+    heading: "Company Information",
     content: [
       {
         heading: "Company address",
@@ -42,7 +42,7 @@ export const INFO = {
     ],
   },
   ourhistory: {
-    heading: `History of the company`,
+    heading: `History of the Company`,
     content: [
       {
         heading: `Established in 1971`,
