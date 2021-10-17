@@ -64,4 +64,4 @@ export const INFO = {
   contact: { heading: "contacts" },
 };
 
-export const IMAGES = [carImage1, carImage2, carImage1];
+export const IMAGES = [carImage2, carImage2, carImage3];
