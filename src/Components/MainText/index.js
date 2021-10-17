@@ -24,14 +24,15 @@ const MainText = () => {
     <>
       <div className="absolute z-50 w-screen space-y-6 text-white whitespace-pre-line bottom-52 -inset-x-48">
         <p className="text-6xl font-bold">{textToDisplay.heading}</p>
-        {textToDisplay.content.map((content, idx) => (
-          <>
-            <div key={idx} className="flex flex-col">
-              <p className="text-4xl font-bold">{content.heading}</p>
-              <p className="text-xl font-semibold">{content.body}</p>
-            </div>
-          </>
-        ))}
+        {textToDisplay.content &&
+          textToDisplay.content.map((content, idx) => (
+            <>
+              <div key={idx} className="flex flex-col">
+                <p className="text-4xl font-bold">{content.heading}</p>
+                <p className="text-xl font-semibold">{content.body}</p>
+              </div>
+            </>
+          ))}
         <Info />
       </div>
     </>
