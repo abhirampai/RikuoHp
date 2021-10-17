@@ -6,6 +6,7 @@ import Links from "./Links";
 import ScrollableDiv from "./ScrollableSection";
 import SocialLinks from "./SocialLinks";
 import MainText from "./MainText";
+import Info from "./Info";
 
 const blackBox = {
   initial: {
@@ -100,6 +101,9 @@ const Index = () => {
               alt="logo"
               className="w-24 h-24"
             />
+          </div>
+          <div>
+            <Info />
           </div>
           <div className="flex flex-wrap justify-between w-full">
             <div className="absolute bottom-0 left-0 w-full mb-10 md:w-1/2">

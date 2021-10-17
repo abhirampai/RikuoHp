@@ -1,6 +1,10 @@
 import carImage1 from "../Assets/1.jpeg";
 import carImage2 from "../Assets/2.jpeg";
 import carImage3 from "../Assets/3.jpeg";
+import carImage4 from "../Assets/4.jpeg";
+import carImage5 from "../Assets/5.jpeg";
+import carImage6 from "../Assets/6.jpeg";
+import carImage7 from "../Assets/7.jpeg";
 
 export const INITIAL_LINKS_CLICKED = {
   kaishajouhou: false,
@@ -64,4 +68,12 @@ export const INFO = {
   contact: { heading: "contacts" },
 };
 
-export const IMAGES = [carImage2, carImage2, carImage3];
+export const IMAGES = [
+  carImage1,
+  carImage2,
+  carImage3,
+  carImage4,
+  carImage5,
+  carImage6,
+  carImage7,
+];

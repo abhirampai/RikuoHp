@@ -1,6 +1,5 @@
 import { INFO } from "../../Common/constants";
 import { useState, useEffect } from "react";
-import Info from "../Info";
 
 const MainText = () => {
   const [textToDisplay, setTextToDisplay] = useState("");
@@ -33,7 +32,6 @@ const MainText = () => {
               </div>
             </>
           ))}
-        <Info />
       </div>
     </>
   );
