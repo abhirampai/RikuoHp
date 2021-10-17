@@ -1,5 +1,25 @@
 import { motion } from "framer-motion";
+import emailjs from "emailjs-com";
 const Contact = ({ setShowForm }) => {
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE,
+        e.target,
+        process.env.REACT_APP_USER
+      )
+      .then(
+        (result) => {
+          console.log(result);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  }
   return (
     <motion.div
       initial={{ x: "100vw" }}
@@ -117,7 +137,10 @@ const Contact = ({ setShowForm }) => {
                 </div>
               </div>
 
-              <form className="flex flex-col justify-center p-6">
+              <form
+                onSubmit={sendEmail}
+                className="flex flex-col justify-center p-6"
+              >
                 <div className="flex flex-col">
                   <label htmlFor="name" className="hidden">
                     Full Name
