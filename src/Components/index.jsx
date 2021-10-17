@@ -113,7 +113,7 @@ const Index = () => {
                 transition={{ duration: 1 }}
                 src={logo}
                 alt="logo"
-                className="mx-auto h-36 w-36"
+                className="w-24 h-24 md:ml-24 md:h-36 md:w-36"
               />
             </div>
             <motion.div

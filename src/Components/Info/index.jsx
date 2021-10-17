@@ -21,7 +21,7 @@ const Info = () => {
   }
   return (
     <>
-      <div className="flex flex-col items-center mt-4 space-y-6 text-2xl text-white md:items-start md:mx-auto md:w-1/2 md:border-r xl:mt-6 border-white-100">
+      <div className="flex flex-col items-center mt-4 space-y-6 text-2xl text-white md:items-start md:ml-24 md:w-1/2 md:border-r xl:mt-6 border-white-100">
         <div>
           <h1 className="ml-4 text-xl font-bold md:ml-0 xl:text-3xl">Since</h1>
           <h3 className="flex text-5xl text-gray-500">
