@@ -4,15 +4,15 @@ import LinkTag from "./LinkTag";
 
 const Links = ({ loading, linksClick, setLinksClicked }) => {
   useEffect(() => {
-    if (window.location.href.includes("kaishajouhou")) {
+    if (window.location.href.includes("information")) {
       setLinksClicked((prevClicked) => ({
         ...prevClicked,
-        kaishajouhou: !prevClicked.kaishajouhou,
+        information: !prevClicked.information,
       }));
-    } else if (window.location.href.includes("kaisharirekish")) {
+    } else if (window.location.href.includes("ourhistory")) {
       setLinksClicked((prevClicked) => ({
         ...prevClicked,
-        kaisharirekishi: !prevClicked.kaisharirekishi,
+        ourhistory: !prevClicked.ourhistory,
       }));
     } else if (window.location.href.includes("services")) {
       setLinksClicked((prevClicked) => ({
@@ -27,7 +27,7 @@ const Links = ({ loading, linksClick, setLinksClicked }) => {
     } else {
       setLinksClicked((prevClicked) => ({
         ...prevClicked,
-        kaishajouhou: !prevClicked.kaishajouhou,
+        information: !prevClicked.information,
       }));
     }
   }, []);
@@ -41,12 +41,12 @@ const Links = ({ loading, linksClick, setLinksClicked }) => {
       <LinkTag
         linksClick={linksClick}
         setLinksClicked={setLinksClicked}
-        title="Kaisha Jouhou"
+        title="Information"
       />
       <LinkTag
         linksClick={linksClick}
         setLinksClicked={setLinksClicked}
-        title="Kaisha Rirekishi"
+        title="Our History"
       />
       <LinkTag
         linksClick={linksClick}

@@ -131,7 +131,7 @@ const Index = () => {
             <MainText />
           </div>
           <div className="flex flex-wrap justify-between w-full">
-            <div className="absolute bottom-0 left-0 w-full mb-10 md:w-1/2">
+            <div className="absolute bottom-0 left-0 w-full mb-6 xl:mb-10 md:w-1/2">
               <Links
                 loading={loading}
                 linksClick={linksClick}

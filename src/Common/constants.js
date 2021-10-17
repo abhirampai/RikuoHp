@@ -7,8 +7,8 @@ import carImage6 from "../Assets/6.jpeg";
 import carImage7 from "../Assets/7.jpeg";
 
 export const INITIAL_LINKS_CLICKED = {
-  kaishajouhou: false,
-  kaisharirekishi: false,
+  information: false,
+  ourhistory: false,
   services: false,
   contact: false,
 };
@@ -23,30 +23,7 @@ export const LINK_NOT_CLICKED = {
 };
 
 export const INFO = {
-  //   kaishajouhou: `会社情報
-  //   •会社住所
-  //   〒663-8181
-  //   兵庫県西宮市若草町１丁目３−１４
-  //   •創業
-  //   1971年
-  //   •資本金
-  //   1000万円
-  //   •従業員
-  //   5人`,
-  //   kaisharirekishi: `会社の歴史
-  //   •1971年創業
-  //   ガソリンスタンド業を創業
-  //   •1996年までに
-  //   西宮、尼崎などに4店舗を展開
-  //   •2016年から
-  //   店舗ごとに株式化`,
-  //   contact: `
-  //   連絡先（できるだけ多い方がいい）
-  // •hondy.tanso@icloud.com
-  // •07043831177
-  // •0798476154
-  //   `,
-  kaishajouhou: {
+  information: {
     heading: "Company information",
     content: [
       {
@@ -64,7 +41,7 @@ export const INFO = {
       },
     ],
   },
-  kaisharirekishi: {
+  ourhistory: {
     heading: `History of the company`,
     content: [
       {

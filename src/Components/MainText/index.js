@@ -6,16 +6,16 @@ const MainText = () => {
   const [textToDisplay, setTextToDisplay] = useState("");
   const [loadingElement, setLoading] = useState(true);
   useEffect(() => {
-    if (window.location.href.includes("kaishajouhou")) {
-      setTextToDisplay(INFO.kaishajouhou);
-    } else if (window.location.href.includes("kaisharirekish")) {
-      setTextToDisplay(INFO.kaisharirekishi);
+    if (window.location.href.includes("information")) {
+      setTextToDisplay(INFO.information);
+    } else if (window.location.href.includes("ourhistory")) {
+      setTextToDisplay(INFO.ourhistory);
     } else if (window.location.href.includes("services")) {
       setTextToDisplay(INFO.services);
     } else if (window.location.href.includes("contact")) {
       setTextToDisplay(INFO.contact);
     } else {
-      setTextToDisplay(INFO.kaishajouhou);
+      setTextToDisplay(INFO.information);
     }
     setLoading(false);
   });
@@ -26,7 +26,7 @@ const MainText = () => {
         initial={{ x: "100vw" }}
         animate={{ x: 0 }}
         transition={{ duration: 1.5 }}
-        className="relative z-50 w-1/2 space-y-6 text-white whitespace-pre-line lg:-inset-x-24 -inset-y-10 md:-inset-x-12"
+        className="relative z-50 w-1/2 space-y-6 text-white whitespace-pre-line lg:-inset-x-24 md:-inset-x-12"
       >
         <p className="text-5xl font-bold xl:text-7xl">
           {textToDisplay.heading}
