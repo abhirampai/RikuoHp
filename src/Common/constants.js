@@ -46,26 +46,91 @@ export const INFO = {
   // •07043831177
   // •0798476154
   //   `,
-  kaishajouhou: { heading: "kaisha jouhou" },
-  kaisharirekishi: {
-    heading: `会社の歴史`,
+  kaishajouhou: {
+    heading: "Company information",
     content: [
       {
-        heading: `1971年創業`,
-        body: `ガソリンスタンド業を創業 `,
+        heading: "Company address",
+        body: `Nishinomiya, Hyogo 663-8181 
+      1-3-14 Wakakusa-cho, Nishinomiya-shi, Hyogo-ken, Japan`,
       },
       {
-        heading: `1996年までに`,
-        body: `西宮、尼崎などに4店舗を展開`,
+        heading: "Capital",
+        body: `10,000,000 ¥`,
       },
       {
-        heading: `2016年から`,
-        body: `店舗ごとに株式化`,
+        heading: "Employees",
+        body: `5 people`,
       },
     ],
   },
-  services: { heading: "services" },
-  contact: { heading: "contacts" },
+  kaisharirekishi: {
+    heading: `History of the company`,
+    content: [
+      {
+        heading: `Established in 1971`,
+        body: `Commencement of the Petrol Station Business`,
+      },
+      {
+        heading: `By 1996`,
+        body: `4 gas stations in Nishinomiya and Amagasaki`,
+      },
+      {
+        heading: `Since 2016`,
+        body: `Each station has been converted to a PVT. LTD. Company`,
+      },
+    ],
+  },
+  services: {
+    heading: "Services",
+    content: [
+      {
+        heading: "",
+        body: "- Setting up Gasoline Stands",
+      },
+      {
+        heading: "",
+        body: "- Dealing in Second Hand Cars",
+      },
+      {
+        heading: "",
+        body: "- Maintenance and customisation",
+      },
+      {
+        heading: "",
+        body: "- Car Rental Services",
+      },
+      {
+        heading: "",
+        body: "- Exports",
+      },
+      {
+        heading: "",
+        body: "and more...",
+      },
+    ],
+  },
+  contact: {
+    heading: "Contact Us",
+    content: [
+      {
+        heading: "",
+        body: "hondy.tanso@icloud.com",
+      },
+      {
+        heading: "",
+        body: "070-4383-1177",
+      },
+      {
+        heading: "",
+        body: "07-9847-6154",
+      },
+      {
+        heading: "Company Address",
+        body: "〒663-8181,Wakakusa-cho 1-chome, Nishinomiya-shi, Hyogo, Japan",
+      },
+    ],
+  },
 };
 
 export const IMAGES = [

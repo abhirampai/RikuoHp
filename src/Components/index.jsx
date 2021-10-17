@@ -102,8 +102,11 @@ const Index = () => {
               className="w-24 h-24"
             />
           </div>
-          <div>
-            <Info />
+          <div className="flex flex-wrap justify-between w-full">
+            <div className="w-1/2">
+              <Info />
+            </div>
+            <MainText />
           </div>
           <div className="flex flex-wrap justify-between w-full">
             <div className="absolute bottom-0 left-0 w-full mb-10 md:w-1/2">
@@ -119,7 +122,6 @@ const Index = () => {
               transition={{ duration: 1.5 }}
               className="absolute bottom-0 right-0 w-full md:w-1/2"
             >
-              <MainText />
               <ScrollableDiv />
               <SocialLinks />
             </motion.div>

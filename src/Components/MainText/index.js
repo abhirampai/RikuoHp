@@ -1,9 +1,10 @@
 import { INFO } from "../../Common/constants";
 import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
 const MainText = () => {
   const [textToDisplay, setTextToDisplay] = useState("");
-  const [loading, setLoading] = useState(true);
+  const [loadingElement, setLoading] = useState(true);
   useEffect(() => {
     if (window.location.href.includes("kaishajouhou")) {
       setTextToDisplay(INFO.kaishajouhou);
@@ -18,21 +19,26 @@ const MainText = () => {
     }
     setLoading(false);
   });
-  if (loading) return <></>;
+  if (loadingElement) return <></>;
   return (
     <>
-      <div className="absolute z-50 w-screen space-y-6 text-white whitespace-pre-line bottom-52 -inset-x-48">
-        <p className="text-6xl font-bold">{textToDisplay.heading}</p>
+      <motion.div
+        initial={{ x: "100vw" }}
+        animate={{ x: 0 }}
+        transition={{ duration: 1.5 }}
+        className="relative z-50 w-1/2 space-y-6 text-white whitespace-pre-line -inset-x-24 -inset-y-10"
+      >
+        <p className="font-bold text-7xl">{textToDisplay.heading}</p>
         {textToDisplay.content &&
           textToDisplay.content.map((content, idx) => (
             <>
               <div key={idx} className="flex flex-col">
-                <p className="text-4xl font-bold">{content.heading}</p>
-                <p className="text-xl font-semibold">{content.body}</p>
+                <p className="text-6xl font-bold">{content.heading}</p>
+                <p className="text-3xl font-semibold">{content.body}</p>
               </div>
             </>
           ))}
-      </div>
+      </motion.div>
     </>
   );
 };

@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { animate } from "framer-motion";
 
 const Info = () => {
@@ -7,9 +7,8 @@ const Info = () => {
 
     useEffect(() => {
       const node = nodeRef.current;
-
       const controls = animate(from, to, {
-        duration: 5,
+        duration: 3,
         onUpdate(value) {
           node.textContent = value.toFixed(0);
         },
@@ -22,23 +21,29 @@ const Info = () => {
   }
   return (
     <>
-      <div className="flex flex-col w-full mx-auto space-y-6 text-2xl text-white">
+      <div className="flex flex-col w-1/2 mx-auto space-y-6 text-2xl text-white ">
         <div>
-          <h1 className="text-4xl font-bold">Year</h1>
-          <h3 className="text-gray-500">
+          <h1 className="text-4xl font-bold">Since</h1>
+          <h3 className="text-2xl text-gray-500">
             <Counter from={0} to={1996} />
           </h3>
         </div>
         <div>
           <h1 className="text-4xl font-bold">Number Of Cars</h1>
           <h3 className="text-gray-500">
-            <Counter from={0} to={36} />
+            <p className="flex text-2xl">
+              <Counter from={0} to={2874} />
+              ...
+            </p>
           </h3>
         </div>
         <div>
           <h1 className="text-4xl font-bold">Number Of Countries</h1>
           <h3 className="text-gray-500">
-            <Counter from={0} to={20} />
+            <p className="flex text-2xl">
+              <Counter from={0} to={20} />
+              ...
+            </p>
           </h3>
         </div>
       </div>
@@ -46,4 +51,4 @@ const Info = () => {
   );
 };
 
-export default Info;
+export default React.memo(Info);
