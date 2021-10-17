@@ -11,7 +11,7 @@ const MainText = () => {
     } else if (window.location.href.includes("kaisharirekish")) {
       setTextToDisplay(INFO.kaisharirekishi);
     } else if (window.location.href.includes("services")) {
-      setTextToDisplay(INFO.kaishajouhou);
+      setTextToDisplay(INFO.services);
     } else if (window.location.href.includes("contact")) {
       setTextToDisplay(INFO.contact);
     } else {
