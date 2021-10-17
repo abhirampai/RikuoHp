@@ -77,7 +77,8 @@ export const INFO = {
       },
       {
         heading: `Since 2016`,
-        body: `Each station has been converted to a PVT. LTD. Company`,
+        body: `Each station has been converted 
+        to a PVT. LTD. Company`,
       },
     ],
   },
@@ -127,7 +128,12 @@ export const INFO = {
       },
       {
         heading: "Company Address",
-        body: "〒663-8181,Wakakusa-cho 1-chome, Nishinomiya-shi, Hyogo, Japan",
+        body: "",
+      },
+      {
+        heading: "",
+        body: `〒663-8181,Wakakusa-cho 1-chome, 
+        Nishinomiya-shi, Hyogo, Japan`,
       },
     ],
   },

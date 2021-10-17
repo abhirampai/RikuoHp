@@ -92,15 +92,35 @@ const Index = () => {
       </motion.div>
       {!loading && (
         <>
-          <div>
+          <div className="flex justify-between w-full">
             <motion.img
               initial={{ y: "100vh" }}
               animate={{ y: 0 }}
               transition={{ duration: 1 }}
               src={logo}
               alt="logo"
-              className="w-24 h-24"
+              className="m-2 h-36 w-36"
             />
+            <motion.div
+              initial={{ x: "100vw" }}
+              animate={!loading && { x: 0 }}
+              transition={{ duration: 1.5 }}
+              className="mt-10 mr-2"
+            >
+              <button className="p-2 pl-5 pr-5 text-lg text-white bg-transparent border-2 border-white rounded-lg hover:bg-white hover:text-black focus:border-4 focus:border-gray-300">
+                <a
+                  href="#contact"
+                  onClick={() =>
+                    setLinksClicked((prevClicked) => ({
+                      ...INITIAL_LINKS_CLICKED,
+                      contact: !prevClicked.contact,
+                    }))
+                  }
+                >
+                  Get In Touch
+                </a>
+              </button>
+            </motion.div>
           </div>
           <div className="flex flex-wrap justify-between w-full">
             <div className="w-1/2">
