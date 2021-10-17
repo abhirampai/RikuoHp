@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { INITIAL_LINKS_CLICKED } from "../Common/constants";
-import logo from "../Assets/up-wind-logo-2.png";
+import logo from "../Assets/Up-wind-logo.svg";
 import Links from "./Links";
 import ScrollableDiv from "./ScrollableSection";
 import SocialLinks from "./SocialLinks";
