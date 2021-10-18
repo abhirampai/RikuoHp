@@ -37,9 +37,9 @@ const MainText = () => {
   return (
     <>
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.25 }}
+        initial={{ x: "100vh" }}
+        animate={{ x: 0 }}
+        transition={{ delay: 0.5 }}
         className={`z-50 w-full mx-auto mt-10 space-y-6 text-center md:text-left text-white whitespace-pre-line md:w-11/12 md:mt-4 md:relative md:mx-0 lg:-inset-x-24 md:-inset-x-12`}
       >
         <p className="text-3xl font-bold md:text-5xl">
