@@ -121,7 +121,6 @@ export const IMAGES = [
   carImage2,
   carImage3,
   carImage4,
-  carImage5,
   carImage6,
   carImage7,
 ];
