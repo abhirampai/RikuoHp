@@ -38,8 +38,8 @@ const MainText = () => {
   return (
     <>
       <motion.div
-        initial={{ x: "100vh" }}
-        animate={{ x: 0 }}
+        initial={{ opacity: 0.5 }}
+        animate={{ opacity: 1 }}
         transition={{ delay: 0.1 }}
         className={`z-50 w-full mx-auto mt-10 space-y-6 text-center md:text-left text-white whitespace-pre-line md:w-11/12 md:mt-4 md:relative md:mx-0 lg:-inset-x-24 md:-inset-x-12`}
       >
