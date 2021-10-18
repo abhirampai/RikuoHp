@@ -31,14 +31,14 @@ const MainText = () => {
     }
     setTimeout(() => {
       setLoading(false);
-    }, 500);
+    }, 350);
   }, [window.location.href]);
   return (
     <>
       <motion.div
         initial={loadingElement ? { x: "100vh" } : { opacity: 0 }}
         animate={!loadingElement ? { x: 0 } : { opacity: "100vh" }}
-        transition={{ delay: 0.25 }}
+        transition={{ delay: 0.5 }}
         className={`${
           loadingElement ? "invisible" : "block"
         } z-50 w-full mx-auto mt-10 space-y-6 text-center md:text-left text-white whitespace-pre-line md:w-11/12 md:mt-4 md:relative md:mx-0 lg:-inset-x-24 md:-inset-x-12`}
