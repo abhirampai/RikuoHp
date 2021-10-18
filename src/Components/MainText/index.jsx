@@ -33,7 +33,8 @@ const MainText = () => {
       setLoading(false);
     }, 100);
   }, [window.location.href]);
-  if (loadingElement) return <div className="min-w-full min-h-full"></div>;
+  if (loadingElement && window.innerWidth > 768)
+    return <div className="min-w-full min-h-96"></div>;
   return (
     <>
       <motion.div
