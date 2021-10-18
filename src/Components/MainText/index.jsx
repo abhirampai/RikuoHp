@@ -31,7 +31,7 @@ const MainText = () => {
     }
     setTimeout(() => {
       setLoading(false);
-    }, 200);
+    }, 500);
   }, [window.location.href]);
   return (
     <>
