@@ -14,7 +14,7 @@ export const INITIAL_LINKS_CLICKED = {
 };
 
 export const LINK_CLICKED = {
-  textStyle: "text-sm md:text-lg xl:text-4xl text-white",
+  textStyle: "text-sm md:text-xl xl:text-4xl text-white",
   borderStyle: "w-4 md:w-12 border-b border-white",
 };
 export const LINK_NOT_CLICKED = {

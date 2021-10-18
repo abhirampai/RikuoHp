@@ -35,7 +35,7 @@ const Links = ({ loading, setShowForm, linksClick, setLinksClicked }) => {
     <motion.div
       initial={{ x: "-100vw" }}
       animate={!loading && { x: 0 }}
-      transition={{ duration: 1 }}
+      transition={{ duration: 0.5 }}
       className="flex justify-around w-full md:ml-24 md:space-y-4 md:flex-col md:w-1/2 md:justify-start"
     >
       <LinkTag
